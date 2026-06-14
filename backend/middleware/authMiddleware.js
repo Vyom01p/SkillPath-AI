@@ -34,3 +34,4 @@ const protect = catchAsync(async (req, res, next) => {
   req.user = user;
   next();
 });
+export default protect;

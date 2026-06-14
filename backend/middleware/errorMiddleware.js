@@ -1,5 +1,5 @@
 //This is the Global Error Handler
-import AppError from "./AppError.js";
+import AppError from "../utils/AppError.js";
 
 const handleJWTError = () =>
   new AppError("Invalid token. Please log in again!", 401);
