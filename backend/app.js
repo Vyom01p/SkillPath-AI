@@ -4,6 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import authRoutes from "./routes/authRoutes.js";
 import errorMiddleware from "./middleware/errorMiddleware.js";
+import dashboardRoutes from "./routes/dashboardRoutes.js";
 const app = express();
 
 app.use(helmet());
@@ -13,6 +14,7 @@ app.use(express.json());
 
 //Routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/dashboard", dashboardRoutes);
 //Global error handler
 app.use(errorMiddleware);
 export default app;
