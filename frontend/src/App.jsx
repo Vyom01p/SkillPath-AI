@@ -5,9 +5,10 @@ import ProtectedRoute from "./components/shared/ProtectedRoute";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Layout from "./components/layout/Layout";
-const Dashboard = () => (
-  <div className="p-8 text-2xl font-bold">Dashboard coming soon...</div>
-);
+import Dashboard from "./pages/Dashboard";
+// const Dashboard = () => (
+//   <div className="p-8 text-2xl font-bold">Dashboard coming soon...</div>
+// );
 const Generate = () => (
   <div className="p-8 text-2xl font-bold">Generate coming soon...</div>
 );
